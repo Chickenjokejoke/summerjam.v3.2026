@@ -766,7 +766,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -2123845462222159374, guid: 74847a856fbd0064a9ee7bc38627185b, type: 3}
+    m_HighlightedSprite: {fileID: -1865907950379546995, guid: 501267a1f41a5ec488f513d3462bde31, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1865907950379546995, guid: 501267a1f41a5ec488f513d3462bde31, type: 3}
+  m_Sprite: {fileID: -2123845462222159374, guid: 74847a856fbd0064a9ee7bc38627185b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1527,7 +1527,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 6948314513146391782, guid: a820c68c6ed5c524195dc85f4b2d6b42, type: 3}
+    m_HighlightedSprite: {fileID: 8767850829331320315, guid: 5ecd13459921d2346bfe7bcf257066e6, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8767850829331320315, guid: 5ecd13459921d2346bfe7bcf257066e6, type: 3}
+  m_Sprite: {fileID: 6948314513146391782, guid: a820c68c6ed5c524195dc85f4b2d6b42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1766,7 +1766,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -4611602155563779180, guid: c2a10fd3c9c7fc545b27d5fb9badba08, type: 3}
+    m_HighlightedSprite: {fileID: -8764745071116064807, guid: a7d096b054a7e36449fdd16023ceccc3, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8764745071116064807, guid: a7d096b054a7e36449fdd16023ceccc3, type: 3}
+  m_Sprite: {fileID: -4611602155563779180, guid: c2a10fd3c9c7fc545b27d5fb9badba08, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
