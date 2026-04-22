@@ -187,12 +187,12 @@ TextureImporter:
       name: "menu book \u0E01\u0E48\u0E2D\u0E19\u0E0A\u0E35\u0E49_0"
       rect:
         serializedVersion: 2
-        x: 729
-        y: 350
-        width: 286
-        height: 156
+        x: 699
+        y: 239
+        width: 521
+        height: 283
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: "menu book \u0E01\u0E48\u0E2D\u0E19\u0E0A\u0E35\u0E49_1"
       rect:
         serializedVersion: 2
-        x: 747
+        x: 751
         y: 252
         width: 452
         height: 141
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,7 +236,7 @@ TextureImporter:
         width: 113
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,7 +253,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4e5374258de7ec94c87062cbe813a3f8
     internalID: 0
     vertices: []
     indices: 
