@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
 
-public class    gameplay : MonoBehaviour
+public class ingredient : MonoBehaviour
 {
-    public Ingredient  Ingredient;
+    //public Ingredient  Ingredient;
     public  tools Tool;
     public MenuDrinks MenuDrink;  
    public enum MenuDrinks
