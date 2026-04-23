@@ -1531,7 +1531,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: lode_char
+        m_MethodName: hide_water
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3386,7 +3386,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: lode_char
+        m_MethodName: hide_water
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4441,7 +4441,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: lode_char
+        m_MethodName: hide_water
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5540,7 +5540,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: save_char
+        m_MethodName: save_wate
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5896,7 +5896,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: lode_char
+        m_MethodName: hide_water
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6189,6 +6189,11 @@ MonoBehaviour:
   cha7: {fileID: 663799074}
   cha8: {fileID: 508430832}
   save_cha: 0
+  water1: {fileID: 0}
+  water2: {fileID: 0}
+  water3: {fileID: 0}
+  water4: {fileID: 0}
+  save_water: 0
 --- !u!1 &1367002560
 GameObject:
   m_ObjectHideFlags: 0
@@ -6659,7 +6664,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: save_char
+        m_MethodName: save_wate
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9011,7 +9016,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: save_char
+        m_MethodName: save_wate
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9678,7 +9683,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1366725928}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: save_char
+        m_MethodName: save_wate
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -19,6 +19,11 @@ public class MainMenu : MonoBehaviour
     public GameObject cha7;
     public GameObject cha8;
     public int save_cha = 0;
+    public GameObject water1;
+    public GameObject water2;
+    public GameObject water3;
+    public GameObject water4;
+    public int save_water = 0;
    
     public void hide_character()
     {
@@ -28,10 +33,19 @@ public class MainMenu : MonoBehaviour
         cha7.SetActive(false); cha8.SetActive(false);
        
     }
+    public void hide_water()
+    {
+        water1.SetActive(false); water2.SetActive(false);
+        water3.SetActive(false); water4.SetActive(false);
+    }
 
     public void save_char(int save_cha)
     {
         this.save_cha = save_cha;
+    }
+    public void save_wate(int save_water)
+    {
+        this.save_water = save_water;
     }
     public void lode_char()
     {
@@ -45,6 +59,15 @@ public class MainMenu : MonoBehaviour
         if (this.save_cha == 5) cha6.SetActive (true);
         if (this .save_cha == 6) cha7.SetActive (true);
         if(this .save_cha == 7) cha8.SetActive (true);
+    }
+    public void lode_water()
+    {
+        hide_water();
+
+        if(this.save_water == 0) water1.SetActive (true);
+        if(this.save_water == 1) water2.SetActive (true);
+        if(this.save_water==2) water3.SetActive (true);
+        if(this.save_water == 3) water4.SetActive(true);
     }
 
 
