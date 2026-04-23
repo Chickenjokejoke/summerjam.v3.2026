@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public Image sound;
     public Sprite sound_off;
     public Sprite sound_on;
+    internal static object Menu;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void startgame()
