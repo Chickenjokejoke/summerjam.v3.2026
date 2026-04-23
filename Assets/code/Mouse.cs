@@ -1,11 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mouse : MonoBehaviour
 {
     public int hold = 0;
     public GameObject lime_obj;//1
     public GameObject coconut_obj;//2
-    public void Hide() 
+    public void Hide()
     {
         lime_obj.SetActive(false);
         coconut_obj.SetActive(false);
@@ -15,8 +17,6 @@ public class Mouse : MonoBehaviour
         hold = item;
 
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Cursor.visible = false;
@@ -26,7 +26,7 @@ public class Mouse : MonoBehaviour
     void Update()
     {
         transform.position = Input.mousePosition;
-        if (hold == 0) 
+        if (hold == 0)
         {
             Hide();
         }
