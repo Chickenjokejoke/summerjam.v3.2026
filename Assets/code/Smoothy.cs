@@ -8,14 +8,15 @@ public class Smoothy : MonoBehaviour
     public Sprite syrup_2;
     public Sprite syrup_3;
     public GameObject syrup_obj;
-    public GameObject soda_obj;
-    public GameObject watermelon_obj;
-    public GameObject m250_obj;
+    public GameObject soda_obj;//3
+    public GameObject watermelon_obj;//4
+    public GameObject m250_obj;//5
     public GameObject coconut_obj;
     public GameObject lime_obj;
-    public GameObject jelly_obj;
-    public GameObject water_obj;
-    public GameObject ice_obj;
+    public GameObject jelly_obj;//6
+    public GameObject water_obj;//7
+    public GameObject ice_obj;//8
+    public GameObject pineapple_obj;//9
     public Mouse mouse;
 
 
@@ -29,6 +30,7 @@ public class Smoothy : MonoBehaviour
     public bool have_jelly = false;
     public bool have_water = false;
     public bool have_ice = false;
+    public bool have_pineapple = false;
     void Start()
     {
         
@@ -45,6 +47,41 @@ public class Smoothy : MonoBehaviour
             have_coconut = true;
             mouse.hold = 0;
         }
+        else if (mouse.hold == 3)
+        {
+            have_soda = true;
+            mouse.hold = 0;
+        }
+        else if (mouse.hold == 4)
+        {
+            have_watermelon=true;
+            mouse.hold = 0;
+        }
+        else if(mouse.hold == 5)
+        {
+            have_m250=true;
+            mouse.hold=0;
+        }
+        else if( mouse.hold == 6)
+        {
+            have_jelly=true;
+            mouse.hold = 0;
+        }
+        else if (mouse.hold == 7)
+        {
+            have_water = true;
+            mouse.hold = 0;
+        }
+        else if ( mouse.hold == 8)
+        {
+            have_ice = true;
+            mouse.hold = 0;
+        }
+        else if (mouse.hold == 9)
+        {
+            have_pineapple=true;
+            mouse.hold = 0;
+        }
     }
     public void Blend()
     {
@@ -57,6 +94,7 @@ public class Smoothy : MonoBehaviour
       have_jelly = false;
       have_water = false;
       have_ice = false;
+      have_pineapple = false;
 }
 
     // Update is called once per frame
@@ -90,5 +128,6 @@ public class Smoothy : MonoBehaviour
         jelly_obj.SetActive(have_jelly);
         water_obj.SetActive(have_water);
         ice_obj.SetActive(have_ice);
+        pineapple_obj.SetActive(have_pineapple);
     }
 }
