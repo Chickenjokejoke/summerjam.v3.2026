@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public Image sound;
     public Sprite sound_off;
     public Sprite sound_on;
+
     public GameObject cha1;
     public GameObject cha2;
     public GameObject cha3;
@@ -45,6 +46,9 @@ public class MainMenu : MonoBehaviour
         if (this .save_cha == 6) cha7.SetActive (true);
         if(this .save_cha == 7) cha8.SetActive (true);
     }
+
+
+    internal static object Menu;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
