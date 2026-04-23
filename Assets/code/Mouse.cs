@@ -4,19 +4,17 @@ using UnityEngine.UI;
 
 public class Mouse : MonoBehaviour
 {
-    public int hold = 0;
-    public GameObject lime_obj;//1
-    public GameObject coconut_obj;//2
-    public void Hide()
-    {
-        lime_obj.SetActive(false);
-        coconut_obj.SetActive(false);
-    }
-    public void Pick(int item)
-    {
-        hold = item;
+    public string ingredientName;
+    public Ingredient ingredient;
+    public Image icon;
 
+    public override bool Equals(object obj)
+    {
+        return obj is Mouse mouse &&
+               base.Equals(obj) &&
+               EqualityComparer<Image>.Default.Equals(icon, mouse.icon);
     }
+
     void Start()
     {
         Cursor.visible = false;
@@ -26,20 +24,10 @@ public class Mouse : MonoBehaviour
     void Update()
     {
         transform.position = Input.mousePosition;
-        if (hold == 0)
-        {
-            Hide();
-        }
-        else if (hold == 1)
-        {
-            lime_obj.SetActive(true);
-            coconut_obj.SetActive(false);
-        }
-        else if (hold == 2)
-        {
-            lime_obj.SetActive(false);
-            coconut_obj.SetActive(true);
-        }
+    }// Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    }
+}
+public class Ingredient : MonoBehaviour
+{
+    
 }

@@ -1,13 +1,11 @@
 using System;
 using UnityEngine;
 
-
-
-public class ingredient : MonoBehaviour
+public class    ingredients : MonoBehaviour
 {
-    //public Ingredient  Ingredient;
+    public Ingredient  Ingredient;
     public  tools Tool;
-    public enum ingredients
+    public enum ingredient
     {
         soda, water, honey, cha, syrup, strawberry, kivy , orange, Lime, Pineapple , Watermelon, Coconut, Jelly , Jelly1, Jelly2 , Jelly3 , ice
     }
