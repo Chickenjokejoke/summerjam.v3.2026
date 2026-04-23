@@ -1885,7 +1885,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 4664477829047571230, guid: da06475d1e790b448bda8505c9bb179f, type: 3}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 7654401099253413072, guid: c2a6424758dbd2b4580377adfbc686cf, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -6009,7 +6009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E01\u0E34\u0E19\u0E14\u0E35\u0E2D\u0E22\u0E39\u0E48\u0E14\u0E35"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f99e31a915587af4db287daa9ba06527, type: 2}
   m_sharedMaterial: {fileID: -1779914503297961088, guid: f99e31a915587af4db287daa9ba06527, type: 2}
