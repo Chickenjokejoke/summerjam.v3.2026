@@ -28,9 +28,7 @@ public class Smoothy : MonoBehaviour
 
     [Header("Result Objects")]
     public GameObject WatermelonSmoothie_obj;
-    // public GameObject CoconutSmoothie_obj;
 
-    // ประกาศครบทุกตัว
     public bool have_soda = false;
     public bool have_watermelon = false;
     public bool have_m250 = false;
@@ -40,8 +38,8 @@ public class Smoothy : MonoBehaviour
     public bool have_water = false;
     public bool have_ice = false;
     public bool have_pineapple = false;
-    public bool have_honey = false; // เพิ่มแล้ว
-    public bool have_syrup = false; // เพิ่มแล้ว
+    public bool have_honey = false;
+    public bool have_syrup = false;
     public bool have_watermelon_smoothie = false;
 
     void Start() { }
@@ -60,7 +58,7 @@ public class Smoothy : MonoBehaviour
             case 8: have_ice = true; break;
             case 9: have_pineapple = true; break;
             case 10: have_honey = true; break;
-            case 11: have_syrup = true; break; // แก้จาก syrup = true
+            case 11: have_syrup = true; break;
         }
         mouse.hold = 0;
         mouse.Hide();
@@ -80,6 +78,17 @@ public class Smoothy : MonoBehaviour
         if (have_pineapple) current.Add(ingredient.ingredients.pineapple);
         if (have_honey) current.Add(ingredient.ingredients.honey);
         if (have_syrup) current.Add(ingredient.ingredients.syrup);
+
+        Debug.Log("Blend ถูกเรียก!"); // เช็คว่าปุ่มทำงานไหม
+
+        Debug.Log($"ingredients ที่มี: soda={have_soda}, watermelon={have_watermelon}, ice={have_ice}");
+        // เช็คว่า Add() ทำงานก่อน Blend() จริงไหม
+
+        if (ingredientManager == null)
+        {
+            Debug.LogError("ingredientManager ยังไม่ได้ assign!");
+            return;
+        }
 
         ingredient.recipe matched = null;
         foreach (var r in ingredientManager.GetAllRecipes())
@@ -106,8 +115,10 @@ public class Smoothy : MonoBehaviour
         }
 
         Debug.Log($"ได้เมนู: {matched.menuDrink}!");
-        ShowResult(matched.menuDrink);
         ClearIngredients();
+        ShowResult(matched.menuDrink);
+
+
     }
 
     private void ShowResult(ingredient.MenuDrinks drink)
@@ -115,7 +126,7 @@ public class Smoothy : MonoBehaviour
         switch (drink)
         {
             case ingredient.MenuDrinks.WatermelonSmoothie:
-                if (WatermelonSmoothie_obj) WatermelonSmoothie_obj.SetActive(true);
+                have_watermelon_smoothie = true;
                 break;
             default:
                 Debug.Log($"{drink} ยังไม่มี result object");
@@ -128,6 +139,12 @@ public class Smoothy : MonoBehaviour
         have_soda = have_watermelon = have_m250 = have_coconut = false;
         have_lime = have_jelly = have_water = have_ice = have_pineapple = false;
         have_honey = have_syrup = false;
+        // ไม่แตะ have_watermelon_smoothie
+    }
+
+    public void ClearResult()
+    {
+        have_watermelon_smoothie = false;
     }
 
     void Update()

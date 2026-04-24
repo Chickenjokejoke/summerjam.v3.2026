@@ -200,7 +200,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28286479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1955525182}
+        m_TargetAssemblyTypeName: Mouse, Assembly-CSharp
+        m_MethodName: Pick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &28286479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2237,6 +2249,7 @@ GameObject:
   - component: {fileID: 435588430}
   - component: {fileID: 435588433}
   - component: {fileID: 435588434}
+  - component: {fileID: 435588435}
   m_Layer: 5
   m_Name: Smoothy
   m_TagString: Untagged
@@ -2382,8 +2395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125c45d46676fe84dbc060314f64f520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Smoothy
-  myTool: 0
-  ingredientManager: {fileID: 0}
+  myTool: 1
+  ingredientManager: {fileID: 435588435}
   mouse: {fileID: 1955525182}
   honey_obj: {fileID: 139338936}
   syrup_obj: {fileID: 835032135}
@@ -2409,6 +2422,23 @@ MonoBehaviour:
   have_honey: 0
   have_syrup: 0
   have_watermelon_smoothie: 0
+--- !u!114 &435588435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435588428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8db9c6d219a0149a55af96b82ac295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ingredient
+  Tool: 0
+  MenuDrink: 0
+  isAdded: 0
+  Baddrink_img: {fileID: 0}
+  kiwi_img: {fileID: 0}
 --- !u!1 &460430622
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,6 +4166,7 @@ GameObject:
   - component: {fileID: 835032136}
   - component: {fileID: 835032138}
   - component: {fileID: 835032137}
+  - component: {fileID: 835032139}
   m_Layer: 5
   m_Name: syrup
   m_TagString: Untagged
@@ -4200,6 +4231,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835032135}
   m_CullTransparentMesh: 1
+--- !u!114 &835032139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835032135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8db9c6d219a0149a55af96b82ac295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ingredient
+  Tool: 0
+  MenuDrink: 0
+  isAdded: 0
+  Baddrink_img: {fileID: 0}
+  kiwi_img: {fileID: 0}
 --- !u!1 &903360326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,6 +4379,7 @@ GameObject:
   - component: {fileID: 952660520}
   - component: {fileID: 952660522}
   - component: {fileID: 952660521}
+  - component: {fileID: 952660523}
   m_Layer: 5
   m_Name: ice
   m_TagString: Untagged
@@ -4395,6 +4444,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952660519}
   m_CullTransparentMesh: 1
+--- !u!114 &952660523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952660519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8db9c6d219a0149a55af96b82ac295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ingredient
+  Tool: 0
+  MenuDrink: 0
+  isAdded: 0
+  Baddrink_img: {fileID: 0}
+  kiwi_img: {fileID: 0}
 --- !u!1 &970688919
 GameObject:
   m_ObjectHideFlags: 0
@@ -6282,15 +6348,15 @@ RectTransform:
   m_GameObject: {fileID: 1554849185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0834988, y: 0.0834988, z: 0.0834988}
+  m_LocalScale: {x: 0.23231246, y: 0.23231246, z: 0.23231246}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1955525181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28.9, y: 38}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: -20.52, y: 38}
+  m_SizeDelta: {x: 682, y: 1049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554849187
 MonoBehaviour:
@@ -6312,7 +6378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8c4ecf78b7766284fbd28c2167dc9119, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de1042d652d3b4f4397ab135b0243696, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7238,6 +7304,7 @@ GameObject:
   - component: {fileID: 1657362405}
   - component: {fileID: 1657362407}
   - component: {fileID: 1657362406}
+  - component: {fileID: 1657362408}
   m_Layer: 5
   m_Name: watermelon
   m_TagString: Untagged
@@ -7302,6 +7369,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657362404}
   m_CullTransparentMesh: 1
+--- !u!114 &1657362408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657362404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8db9c6d219a0149a55af96b82ac295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ingredient
+  Tool: 0
+  MenuDrink: 0
+  isAdded: 0
+  Baddrink_img: {fileID: 0}
+  kiwi_img: {fileID: 0}
 --- !u!1 &1677152450
 GameObject:
   m_ObjectHideFlags: 0
@@ -8879,6 +8963,7 @@ GameObject:
   - component: {fileID: 2043374993}
   - component: {fileID: 2043374995}
   - component: {fileID: 2043374994}
+  - component: {fileID: 2043374996}
   m_Layer: 5
   m_Name: water
   m_TagString: Untagged
@@ -8943,6 +9028,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043374992}
   m_CullTransparentMesh: 1
+--- !u!114 &2043374996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043374992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8db9c6d219a0149a55af96b82ac295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ingredient
+  Tool: 0
+  MenuDrink: 0
+  isAdded: 0
+  Baddrink_img: {fileID: 0}
+  kiwi_img: {fileID: 0}
 --- !u!1 &2067680799
 GameObject:
   m_ObjectHideFlags: 0
