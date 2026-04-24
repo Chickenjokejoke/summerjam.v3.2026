@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 32568885}
   - component: {fileID: 32568884}
   m_Layer: 5
-  m_Name: IDK
+  m_Name: idk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 130842169}
   - component: {fileID: 130842168}
   m_Layer: 5
-  m_Name: Pineapple
+  m_Name: pineapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 139338939}
   - component: {fileID: 139338938}
   m_Layer: 5
-  m_Name: syrup
+  m_Name: honey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446.9, y: -65.3}
+  m_AnchoredPosition: {x: 446.9, y: -57.000004}
   m_SizeDelta: {x: 682, y: 1049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139338938
@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 145085760}
   - component: {fileID: 145085759}
   m_Layer: 5
-  m_Name: Lime
+  m_Name: lime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1235,7 +1235,9 @@ RectTransform:
   - {fileID: 1816676947}
   - {fileID: 2043374993}
   - {fileID: 952660520}
+  - {fileID: 1910713920}
   - {fileID: 139338937}
+  - {fileID: 835032136}
   m_Father: {fileID: 700180686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1256,7 +1258,7 @@ GameObject:
   - component: {fileID: 249754552}
   - component: {fileID: 249754551}
   m_Layer: 5
-  m_Name: Soda
+  m_Name: soda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1432,7 +1434,7 @@ GameObject:
   - component: {fileID: 308306400}
   - component: {fileID: 308306399}
   m_Layer: 5
-  m_Name: Jelly (1)
+  m_Name: jelly (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1551,6 +1553,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308306397}
   m_CullTransparentMesh: 1
+--- !u!1 &344715893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344715894}
+  - component: {fileID: 344715896}
+  - component: {fileID: 344715895}
+  m_Layer: 5
+  m_Name: item_honey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &344715894
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344715893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.17677836, y: 0.17677836, z: 0.17677836}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1955525181}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -16, y: 31.4}
+  m_SizeDelta: {x: 163, y: 504}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &344715895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344715893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8090479735817918098, guid: 290e47eea1077e648bfec559532b4c29, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &344715896
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344715893}
+  m_CullTransparentMesh: 1
 --- !u!1 &358271111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446.9, y: -78.100006}
+  m_AnchoredPosition: {x: 446.9, y: -69.8}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358271113
@@ -1918,7 +1995,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384545470}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1955525182}
+        m_TargetAssemblyTypeName: Mouse, Assembly-CSharp
+        m_MethodName: Pick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &384545470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1956,6 +2045,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384545467}
+  m_CullTransparentMesh: 1
+--- !u!1 &416584317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416584318}
+  - component: {fileID: 416584320}
+  - component: {fileID: 416584319}
+  m_Layer: 5
+  m_Name: item_syrup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &416584318
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416584317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.21348275, y: 0.21348275, z: 0.21348275}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1955525181}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -17.4, y: 34.8}
+  m_SizeDelta: {x: 150, y: 393}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &416584319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416584317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 5906138814041315719, guid: 21b47b2b934b4a6469ce7ead359de6e1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &416584320
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416584317}
   m_CullTransparentMesh: 1
 --- !u!1 &427205421
 GameObject:
@@ -2218,11 +2382,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125c45d46676fe84dbc060314f64f520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Smoothy
-  syrup_img: {fileID: 139338938}
-  syrup_1: {fileID: 21300000, guid: e91c773458d325d40aad57b273336db9, type: 3}
-  syrup_2: {fileID: 21300000, guid: 3f57bd287974e214a9473f243794f69c, type: 3}
-  syrup_3: {fileID: 21300000, guid: 4e0bc6e7f18375b4daa53cd74f4ebf1f, type: 3}
-  syrup_obj: {fileID: 139338936}
+  myTool: 0
+  ingredientManager: {fileID: 0}
+  mouse: {fileID: 1955525182}
+  honey_obj: {fileID: 139338936}
+  syrup_obj: {fileID: 835032135}
   soda_obj: {fileID: 555005386}
   watermelon_obj: {fileID: 1657362404}
   m250_obj: {fileID: 1291689715}
@@ -2232,8 +2396,7 @@ MonoBehaviour:
   water_obj: {fileID: 2043374992}
   ice_obj: {fileID: 952660519}
   pineapple_obj: {fileID: 2017123990}
-  mouse: {fileID: 1955525182}
-  syrup: 0
+  WatermelonSmoothie_obj: {fileID: 1910713917}
   have_soda: 0
   have_watermelon: 0
   have_m250: 0
@@ -2243,6 +2406,9 @@ MonoBehaviour:
   have_water: 0
   have_ice: 0
   have_pineapple: 0
+  have_honey: 0
+  have_syrup: 0
+  have_watermelon_smoothie: 0
 --- !u!1 &460430622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,7 +2617,7 @@ GameObject:
   - component: {fileID: 475793490}
   - component: {fileID: 475793489}
   m_Layer: 5
-  m_Name: Jelly (3)
+  m_Name: jelly (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2825,7 +2991,7 @@ GameObject:
   - component: {fileID: 544553539}
   - component: {fileID: 544553538}
   m_Layer: 5
-  m_Name: Jelly
+  m_Name: jelly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3122,7 +3288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.614}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 413, y: -57}
+  m_AnchoredPosition: {x: 413, y: -48.7}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555005388
@@ -3560,7 +3726,7 @@ GameObject:
   - component: {fileID: 722460596}
   - component: {fileID: 722460595}
   m_Layer: 5
-  m_Name: Watermelon
+  m_Name: watermelon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3959,6 +4125,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &835032135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835032136}
+  - component: {fileID: 835032138}
+  - component: {fileID: 835032137}
+  m_Layer: 5
+  m_Name: syrup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &835032136
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835032135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.50933903, y: 0.50933903, z: 0.50933903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151962233}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 446.9, y: -57.000004}
+  m_SizeDelta: {x: 682, y: 1049}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &835032137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835032135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3f57bd287974e214a9473f243794f69c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &835032138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835032135}
+  m_CullTransparentMesh: 1
 --- !u!1 &903360326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,7 +4354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446.9, y: -65.3}
+  m_AnchoredPosition: {x: 446.9, y: -57.000004}
   m_SizeDelta: {x: 682, y: 1049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952660521
@@ -4167,7 +4408,7 @@ GameObject:
   - component: {fileID: 970688922}
   - component: {fileID: 970688921}
   m_Layer: 5
-  m_Name: N250
+  m_Name: m250
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4438,9 +4679,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4803,7 +5044,7 @@ GameObject:
   - component: {fileID: 1242319731}
   - component: {fileID: 1242319730}
   m_Layer: 5
-  m_Name: Jelly (2)
+  m_Name: jelly (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4956,7 +5197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -48.248}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 421.3, y: -54.60001}
+  m_AnchoredPosition: {x: 421.3, y: -46.30001}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1291689717
@@ -6102,7 +6343,7 @@ GameObject:
   - component: {fileID: 1560441298}
   - component: {fileID: 1560441297}
   m_Layer: 5
-  m_Name: Coconut
+  m_Name: coconut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6435,7 +6676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1616966935}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1955525182}
+        m_TargetAssemblyTypeName: Mouse, Assembly-CSharp
+        m_MethodName: Pick
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1616966935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7008,7 +7261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 122.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 450.4, y: -59.900005}
+  m_AnchoredPosition: {x: 450.4, y: -51.600006}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657362406
@@ -7062,7 +7315,7 @@ GameObject:
   - component: {fileID: 1677152453}
   - component: {fileID: 1677152452}
   m_Layer: 5
-  m_Name: Ice
+  m_Name: ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7560,7 +7813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 29.198}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 412.1, y: -63.900005}
+  m_AnchoredPosition: {x: 412.1, y: -55.600006}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1816676948
@@ -7635,7 +7888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 429.5, y: -78.90001}
+  m_AnchoredPosition: {x: 429.5, y: -70.600006}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853413699
@@ -7945,6 +8198,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896200890}
   m_CullTransparentMesh: 1
+--- !u!1 &1910713917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910713920}
+  - component: {fileID: 1910713919}
+  - component: {fileID: 1910713918}
+  m_Layer: 5
+  m_Name: WatermelonSmoothie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1910713918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910713917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 62e1e354b7a5aa4449596077d0bc32bc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1910713919
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910713917}
+  m_CullTransparentMesh: 1
+--- !u!224 &1910713920
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910713917}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.50933903, y: 0.50933903, z: 0.50933903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151962233}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 446.9, y: -57}
+  m_SizeDelta: {x: 682, y: 1049}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1920738009
 GameObject:
   m_ObjectHideFlags: 0
@@ -8172,6 +8500,8 @@ RectTransform:
   - {fileID: 1554849186}
   - {fileID: 1692354895}
   - {fileID: 1170103033}
+  - {fileID: 344715894}
+  - {fileID: 416584318}
   m_Father: {fileID: 1475248541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -8201,6 +8531,8 @@ MonoBehaviour:
   water_obj: {fileID: 1554849185}
   ice_obj: {fileID: 1692354894}
   pineapple_obj: {fileID: 1170103032}
+  honey_obj: {fileID: 344715893}
+  syrup_obj: {fileID: 416584317}
 --- !u!114 &1955525183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8495,7 +8827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.355}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.1, y: -72.8}
+  m_AnchoredPosition: {x: 435.1, y: -64.5}
   m_SizeDelta: {x: 63.51, y: 35.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017123992
@@ -8570,7 +8902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446.9, y: -65.3}
+  m_AnchoredPosition: {x: 446.9, y: -57.000004}
   m_SizeDelta: {x: 682, y: 1049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2043374994

@@ -1,32 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class ingredient : MonoBehaviour
 {
-    //public Ingredient  Ingredient;
-    public tools Tool;   
-   
+    public tools Tool;
     public MenuDrinks MenuDrink;
     public recipe Recipe;
     public bool isAdded = false;
     public Sprite Baddrink_img;
     public Sprite kiwi_img;
 
-
-    Dictionary<MenuDrinks, recipe> recipes = new Dictionary<MenuDrinks, recipe>();
+    // แก้จาก Dictionary ที่ไม่ได้ใช้ → เป็น List ที่เก็บจริง
+    private List<recipe> recipes = new List<recipe>();
 
     public enum MenuDrinks
     {
-        
-        WatermelonSmoothie, CoconutSmoothie, M250Smoothie, WatermelonPineappleSmoothie, OrangeSmoothie, PineappleSmoothie, HoneyLimeSoda, LimeSoda,
-        GreenTeaHoneyLime, GreenTeaHoneyLimeSoda, KiwiSoda, StrawberrySoda, KiwiIcedDrink, StrawberryIcedDrink, ChrysanthemumTea, pandantea, LonganJuice, IceOrange, OrangeSoda
+        WatermelonSmoothie, CoconutSmoothie, M250Smoothie, WatermelonPineappleSmoothie,
+        OrangeSmoothie, PineappleSmoothie, HoneyLimeSoda, LimeSoda,
+        GreenTeaHoneyLime, GreenTeaHoneyLimeSoda, KiwiSoda, StrawberrySoda,
+        KiwiIcedDrink, StrawberryIcedDrink, ChrysanthemumTea, pandantea,
+        LonganJuice, IceOrange, OrangeSoda
     }
-    public enum  ingredients
+
+    public enum ingredients
     {
-       
-        soda, water, honey, cha, syrup, strawberry, kiwi, orange, lime, pineapple, watermelon, coconut, jelly,  ice, pandantea, chrysanthemumtea, longanjuice, m250
+        soda, water, honey, cha, syrup, strawberry, kiwi, orange, lime,
+        pineapple, watermelon, coconut, jelly, ice, pandantea,
+        chrysanthemumtea, longanjuice, m250
     }
+
     public enum tools
     {
         tumbler, blender
@@ -43,53 +45,35 @@ public class ingredient : MonoBehaviour
             this.menuDrink = menuDrink;
             this.ingredients = ingredients;
             this.tool = tool;
-            // กำหนดค่าเริ่มต้นเป็น tumbler
         }
-
-        public recipe(MenuDrinks watermelonSmoothie, ingredients[] ingredients, tools blender, tools tumbler)
-        {
-            this.ingredients = ingredients;
-        }
-
-
-
-
-
-
     }
 
     void Start()
     {
+        // blender
+        recipes.Add(new recipe(MenuDrinks.WatermelonSmoothie, new ingredients[] { ingredients.watermelon, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender));
+        recipes.Add(new recipe(MenuDrinks.CoconutSmoothie, new ingredients[] { ingredients.coconut, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender));
+        recipes.Add(new recipe(MenuDrinks.M250Smoothie, new ingredients[] { ingredients.ice, ingredients.m250, ingredients.jelly }, tools.blender));
+        recipes.Add(new recipe(MenuDrinks.WatermelonPineappleSmoothie, new ingredients[] { ingredients.watermelon, ingredients.pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender));
+        recipes.Add(new recipe(MenuDrinks.OrangeSmoothie, new ingredients[] { ingredients.orange, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender));
+        recipes.Add(new recipe(MenuDrinks.PineappleSmoothie, new ingredients[] { ingredients.pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender));
 
-        new recipe(MenuDrinks.WatermelonSmoothie, new ingredients[] { ingredients.watermelon, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.CoconutSmoothie, new ingredients[] { ingredients.coconut, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.M250Smoothie, new ingredients[] { ingredients.ice, ingredients.m250, ingredients.jelly }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.WatermelonPineappleSmoothie, new ingredients[] { ingredients.watermelon, ingredients.pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.OrangeSmoothie, new ingredients[] { ingredients.orange, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.PineappleSmoothie, new ingredients[] { ingredients.pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.HoneyLimeSoda, new ingredients[] { ingredients.honey, ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.LimeSoda, new ingredients[] { ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.GreenTeaHoneyLime, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.lime, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.GreenTeaHoneyLimeSoda, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.KiwiSoda, new ingredients[] { ingredients.kiwi, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.StrawberrySoda, new ingredients[] { ingredients.strawberry, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.KiwiIcedDrink, new ingredients[] { ingredients.kiwi, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.StrawberryIcedDrink, new ingredients[] { ingredients.strawberry, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.ChrysanthemumTea, new ingredients[] { ingredients.chrysanthemumtea, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.LonganJuice, new ingredients[] { ingredients.longanjuice, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.IceOrange, new ingredients[] { ingredients.orange, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.OrangeSoda, new ingredients[] { ingredients.orange, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.pandantea, new ingredients[] { ingredients.pandantea, ingredients.ice }, tools.tumbler);
-
+        // tumbler
+        recipes.Add(new recipe(MenuDrinks.HoneyLimeSoda, new ingredients[] { ingredients.honey, ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.LimeSoda, new ingredients[] { ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.GreenTeaHoneyLime, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.lime, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.GreenTeaHoneyLimeSoda, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.KiwiSoda, new ingredients[] { ingredients.kiwi, ingredients.soda, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.StrawberrySoda, new ingredients[] { ingredients.strawberry, ingredients.soda, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.KiwiIcedDrink, new ingredients[] { ingredients.kiwi, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.StrawberryIcedDrink, new ingredients[] { ingredients.strawberry, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.ChrysanthemumTea, new ingredients[] { ingredients.chrysanthemumtea, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.LonganJuice, new ingredients[] { ingredients.longanjuice, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.IceOrange, new ingredients[] { ingredients.orange, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.OrangeSoda, new ingredients[] { ingredients.orange, ingredients.soda, ingredients.ice }, tools.tumbler));
+        recipes.Add(new recipe(MenuDrinks.pandantea, new ingredients[] { ingredients.pandantea, ingredients.ice }, tools.tumbler));
     }
 
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    // Smoothy.cs ใช้ดึงสูตรทั้งหมด
+    public IReadOnlyList<recipe> GetAllRecipes() => recipes;
 }
