@@ -22,10 +22,10 @@ public class ingredient : MonoBehaviour
         WatermelonSmoothie, CoconutSmoothie, M250Smoothie, WatermelonPineappleSmoothie, OrangeSmoothie, PineappleSmoothie, HoneyLimeSoda, LimeSoda,
         GreenTeaHoneyLime, GreenTeaHoneyLimeSoda, KiwiSoda, StrawberrySoda, KiwiIcedDrink, StrawberryIcedDrink, ChrysanthemumTea, pandantea, LonganJuice, IceOrange, OrangeSoda
     }
-    public enum getcomponent ingredients
+    public enum  ingredients
     {
        
-        soda, water, honey, cha, syrup, strawberry, kiwi, orange, Lime, Pineapple, Watermelon, Coconut, Jelly,  ice, pandantea, chrysanthemumtea, longanjuice, m250
+        soda, water, honey, cha, syrup, strawberry, kiwi, orange, lime, pineapple, watermelon, coconut, jelly,  ice, pandantea, chrysanthemumtea, longanjuice, m250
     }
     public enum tools
     {
@@ -61,16 +61,16 @@ public class ingredient : MonoBehaviour
     void Start()
     {
 
-        new recipe(MenuDrinks.WatermelonSmoothie, new ingredients[] { ingredients.Watermelon, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.CoconutSmoothie, new ingredients[] { ingredients.Coconut, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.M250Smoothie, new ingredients[] { ingredients.ice, ingredients.m250, ingredients.Jelly }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.WatermelonPineappleSmoothie, new ingredients[] { ingredients.Watermelon, ingredients.Pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
+        new recipe(MenuDrinks.WatermelonSmoothie, new ingredients[] { ingredients.watermelon, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
+        new recipe(MenuDrinks.CoconutSmoothie, new ingredients[] { ingredients.coconut, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
+        new recipe(MenuDrinks.M250Smoothie, new ingredients[] { ingredients.ice, ingredients.m250, ingredients.jelly }, tools.blender, tools.tumbler);
+        new recipe(MenuDrinks.WatermelonPineappleSmoothie, new ingredients[] { ingredients.watermelon, ingredients.pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
         new recipe(MenuDrinks.OrangeSmoothie, new ingredients[] { ingredients.orange, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.PineappleSmoothie, new ingredients[] { ingredients.Pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
-        new recipe(MenuDrinks.HoneyLimeSoda, new ingredients[] { ingredients.honey, ingredients.Lime, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.LimeSoda, new ingredients[] { ingredients.Lime, ingredients.soda, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.GreenTeaHoneyLime, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.Lime, ingredients.ice }, tools.tumbler);
-        new recipe(MenuDrinks.GreenTeaHoneyLimeSoda, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.Lime, ingredients.soda, ingredients.ice }, tools.tumbler);
+        new recipe(MenuDrinks.PineappleSmoothie, new ingredients[] { ingredients.pineapple, ingredients.ice, ingredients.syrup, ingredients.water }, tools.blender, tools.tumbler);
+        new recipe(MenuDrinks.HoneyLimeSoda, new ingredients[] { ingredients.honey, ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler);
+        new recipe(MenuDrinks.LimeSoda, new ingredients[] { ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler);
+        new recipe(MenuDrinks.GreenTeaHoneyLime, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.lime, ingredients.ice }, tools.tumbler);
+        new recipe(MenuDrinks.GreenTeaHoneyLimeSoda, new ingredients[] { ingredients.cha, ingredients.honey, ingredients.lime, ingredients.soda, ingredients.ice }, tools.tumbler);
         new recipe(MenuDrinks.KiwiSoda, new ingredients[] { ingredients.kiwi, ingredients.soda, ingredients.ice }, tools.tumbler);
         new recipe(MenuDrinks.StrawberrySoda, new ingredients[] { ingredients.strawberry, ingredients.soda, ingredients.ice }, tools.tumbler);
         new recipe(MenuDrinks.KiwiIcedDrink, new ingredients[] { ingredients.kiwi, ingredients.ice }, tools.tumbler);
