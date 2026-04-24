@@ -22,10 +22,10 @@ public class ingredient : MonoBehaviour
         WatermelonSmoothie, CoconutSmoothie, M250Smoothie, WatermelonPineappleSmoothie, OrangeSmoothie, PineappleSmoothie, HoneyLimeSoda, LimeSoda,
         GreenTeaHoneyLime, GreenTeaHoneyLimeSoda, KiwiSoda, StrawberrySoda, KiwiIcedDrink, StrawberryIcedDrink, ChrysanthemumTea, pandantea, LonganJuice, IceOrange, OrangeSoda
     }
-    public enum ingredients
+    public enum getcomponent ingredients
     {
        
-        soda, water, honey, cha, syrup, strawberry, kiwi, orange, Lime, Pineapple, Watermelon, Coconut, Jelly, Jelly1, Jelly2, Jelly3, ice, pandantea, chrysanthemumtea, longanjuice, m250
+        soda, water, honey, cha, syrup, strawberry, kiwi, orange, Lime, Pineapple, Watermelon, Coconut, Jelly,  ice, pandantea, chrysanthemumtea, longanjuice, m250
     }
     public enum tools
     {
